@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="vi">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260730-05-6814160","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,0","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHO2EIdDP0,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YADy3sAhvXQ,0","Oleo Script":"YACgEQQ14jI,0","Playfair Display":"YAFdJhem5V8,1","Poppins":"YAE5fPSY9qM,0","Press Start 2P":"YAFyGr-8pmQ,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/a27874207e105461.telemetry_sdk.js" integrity="sha512-wgI5N9F7oA2h3vH+benMYIv4wGqTct4nKWakqgvfgRyBLmfYq8q/fi6gkfWKd2hMsyN+VQ/qOAOpxybwkcoxlA=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài Học Tiếng Trung - 水果 Trái Cây</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+        :root {
+            --primary: #22c55e;
+            --secondary: #f97316;
+            --accent: #fbbf24;
+            --bg: #fefce8;
+            --card: #ffffff;
+            --text: #1f2937;
+            --text-muted: #6b7280;
+            --border: #e5e7eb;
+        }
+        .dark {
+            --bg: #1a1a2e;
+            --card: #16213e;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; background: linear-gradient(135deg, #fff7ed 0%, #fefce8 42%, #ecfdf5 100%); color: var(--text); transition: background 0.3s, color 0.3s; position: relative; overflow-x: hidden; }
+        body::before, body::after { content: ''; position: fixed; width: 220px; height: 220px; border-radius: 999px; pointer-events: none; z-index: -1; opacity: 0.45; filter: blur(2px); animation: bubbleFloat 14s ease-in-out infinite alternate; }
+        body::before { top: 90px; left: -90px; background: radial-gradient(circle, #fde68a 0%, #fed7aa 45%, transparent 72%); }
+        body::after { right: -90px; bottom: 40px; background: radial-gradient(circle, #bbf7d0 0%, #bae6fd 45%, transparent 72%); animation-delay: -6s; }
+        .floating-fruit { position: fixed; z-index: -1; pointer-events: none; opacity: 0.28; filter: saturate(1.1); animation: fruitDrift 18s ease-in-out infinite; }
+        .fruit-one { top: 22%; left: 5%; font-size: 34px; animation-delay: -3s; }
+        .fruit-two { top: 58%; right: 6%; font-size: 30px; animation-delay: -10s; }
+        .fruit-three { bottom: 8%; left: 18%; font-size: 26px; animation-delay: -14s; }
+        @keyframes bubbleFloat { 0% { transform: translate3d(0, 0, 0) scale(1); } 50% { transform: translate3d(35px, -24px, 0) scale(1.08); } 100% { transform: translate3d(-18px, 28px, 0) scale(0.94); } }
+        @keyframes fruitDrift { 0%, 100% { transform: translate3d(0, 0, 0) rotate(-8deg); } 50% { transform: translate3d(18px, -30px, 0) rotate(10deg); } }
+        @media (prefers-reduced-motion: reduce) { body::before, body::after, .floating-fruit { animation: none; } }
+        .app-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; transition: all 0.3s; }
+        .app-btn { padding: 12px 24px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; border: none; font-size: 16px; touch-action: manipulation; }
+        .app-btn:active { transform: scale(0.95); }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: #16a34a; }
+        .btn-secondary { background: var(--secondary); color: white; }
+        .btn-accent { background: var(--accent); color: #1f2937; }
+        .section-hidden { display: none; }
+        .section-active { display: block; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .flashcard { perspective: 1000px; cursor: pointer; }
+        .flashcard-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; }
+        .flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+        .flashcard-front, .flashcard-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 16px; overflow: hidden; }
+        .flashcard-back { transform: rotateY(180deg); }
+        .chat-bubble { max-width: 85%; padding: 12px 16px; border-radius: 16px; margin-bottom: 8px; }
+        .chat-left { background: var(--card); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
+        .chat-right { background: #dcfce7; border-bottom-right-radius: 4px; }
+        .dark .chat-right { background: #064e3b; }
+        .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); transition: width 0.5s; border-radius: 3px; }
+        .nav-item { padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; white-space: nowrap; }
+        .nav-item.active { background: var(--primary); color: white; }
+        .memory-card { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 12px; cursor: pointer; font-size: 14px; font-weight: 600; transition: all 0.3s; }
+        .memory-card.hidden-card { background: var(--primary); color: white; }
+        .memory-card.revealed { background: var(--card); border: 2px solid var(--primary); }
+        .memory-card.matched { background: #bbf7d0; border: 2px solid var(--primary); opacity: 0.7; }
+        .dark .memory-card.matched { background: #064e3b; }
+        .popup-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+        .popup-content { background: var(--card); border-radius: 16px; padding: 24px; max-width: 90%; max-height: 80vh; overflow-y: auto; }
+        .confetti { position: fixed; top: -10px; z-index: 9999; pointer-events: none; animation: confettiFall 3s ease-in forwards; }
+        @keyframes confettiFall { to { transform: translateY(110vh) rotate(720deg); opacity: 0; } }
+        .highlight-vocab { background: #fef08a; padding: 1px 4px; border-radius: 4px; cursor: pointer; }
+        .dark .highlight-vocab { background: #854d0e; }
+        .highlight-grammar { background: #bbf7d0; padding: 1px 4px; border-radius: 4px; cursor: pointer; }
+        .dark .highlight-grammar { background: #064e3b; }
+        .drag-item { padding: 10px 16px; border-radius: 10px; background: var(--card); border: 2px solid var(--border); cursor: grab; user-select: none; touch-action: none; }
+        .drag-item.dragging { opacity: 0.5; }
+        .drop-zone { min-height: 50px; border: 2px dashed var(--border); border-radius: 10px; padding: 10px; display: flex; align-items: center; justify-content: center; }
+        .drop-zone.over { border-color: var(--primary); background: rgba(34,197,94,0.1); }
+        .bingo-cell { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600; padding: 4px; text-align: center; transition: all 0.2s; }
+        .bingo-cell.selected { background: var(--primary); color: white; }
+        input, textarea { background: var(--card); color: var(--text); border: 2px solid var(--border); border-radius: 10px; padding: 10px 14px; font-size: 16px; width: 100%; font-family: inherit; }
+        input:focus, textarea:focus { outline: none; border-color: var(--primary); }
+        .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 12px 24px; border-radius: 12px; font-weight: 600; z-index: 9999; animation: fadeIn 0.3s ease; }
+        .toast-success { background: #22c55e; color: white; }
+        .toast-error { background: #ef4444; color: white; }
+    </style>
+  <script src="/_sdk/935a53bc2e11fb8d.data_sdk.js" type="text/javascript" integrity="sha512-qr2oyPnEys1WebcOABaRh6hG77r5PWpqeWW6JTKbRJqly/INsfBi31CVNlTmHqjgeLpkVmmHZJUdxSx/32tOFQ=="></script>
+  <script src="/_sdk/6030e540d4419216.resizing_sdk.js" type="text/javascript" integrity="sha512-b5KWzyoXsbWP4smq4sftIi6Kts4YVBpBsz0BwCViwbBJkK64a3/Z6ZMdWA+qnplNcXw4mhZeqvQi3mOosiRJdA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen w-full">
+  <span class="floating-fruit fruit-one" aria-hidden="true">🍊</span> <span class="floating-fruit fruit-two" aria-hidden="true">🍉</span> <span class="floating-fruit fruit-three" aria-hidden="true">🍓</span> <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-opacity-90" style="background: var(--bg);">
+   <div class="max-w-4xl mx-auto px-4 py-3">
+    <div class="flex items-center justify-between mb-2">
+     <h1 data-template-id="app-title" class="canva-text text-lg font-bold"></h1>
+     <div class="flex gap-2">
+      <button onclick="toggleDarkMode()" class="p-2 rounded-full" style="background: var(--card); border: 1px solid var(--border);"> <i data-lucide="moon" style="width:20px;height:20px;"></i> </button>
+     </div>
+    </div>
+    <div class="progress-bar">
+     <div class="progress-fill" id="main-progress" style="width:0%"></div>
+    </div>
+    <nav class="flex gap-2 mt-2 overflow-x-auto pb-1" id="main-nav">
+     <div class="nav-item active" onclick="showSection('home')">
+      🏠
+     </div>
+     <div class="nav-item" onclick="showSection('vocab')">
+      Từ vựng
+     </div>
+     <div class="nav-item" onclick="showSection('grammar')">
+      Ngữ pháp
+     </div>
+     <div class="nav-item" onclick="showSection('dialogue')">
+      Bài khóa
+     </div>
+     <div class="nav-item" onclick="showSection('phrases')">
+      Mẫu câu
+     </div>
+     <div class="nav-item" onclick="showSection('speaking')">
+      Luyện nói
+     </div>
+     <div class="nav-item" onclick="showSection('games')">
+      Trò chơi
+     </div>
+     <div class="nav-item" onclick="showSection('test')">
+      Kiểm tra
+     </div>
+    </nav>
+   </div>
+  </header>
+  <main class="max-w-4xl mx-auto px-4 py-6 pb-20">
+   <!-- HOME -->
+   <section id="sec-home" class="section-active">
+    <div class="text-center mb-6">
+     <img data-template-id="hero-image" class="canva-image w-full h-48 object-cover rounded-2xl mb-4" loading="lazy">
+     <h2 data-template-id="lesson-title" class="canva-text text-3xl font-bold mb-2"></h2>
+     <p data-template-id="lesson-subtitle" class="canva-text text-lg" style="color: var(--text-muted);"></p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+     <div class="app-card p-4 text-center cursor-pointer" onclick="showSection('vocab')">
+      <div class="text-2xl mb-1">
+       📝
+      </div>
+      <div data-template-id="nav-vocab" class="canva-text font-semibold text-sm"></div>
+     </div>
+     <div class="app-card p-4 text-center cursor-pointer" onclick="showSection('grammar')">
+      <div class="text-2xl mb-1">
+       📖
+      </div>
+      <div data-template-id="nav-grammar" class="canva-text font-semibold text-sm"></div>
+     </div>
+     <div class="app-card p-4 text-center cursor-pointer" onclick="showSection('dialogue')">
+      <div class="text-2xl mb-1">
+       💬
+      </div>
+      <div data-template-id="nav-dialogue" class="canva-text font-semibold text-sm"></div>
+     </div>
+     <div class="app-card p-4 text-center cursor-pointer" onclick="showSection('speaking')">
+      <div class="text-2xl mb-1">
+       🗣️
+      </div>
+      <div data-template-id="nav-speaking" class="canva-text font-semibold text-sm"></div>
+     </div>
+     <div class="app-card p-4 text-center cursor-pointer" onclick="showSection('games')">
+      <div class="text-2xl mb-1">
+       🎮
+      </div>
+      <div data-template-id="nav-games" class="canva-text font-semibold text-sm"></div>
+     </div>
+     <div class="app-card p-4 text-center cursor-pointer" onclick="showSection('test')">
+      <div class="text-2xl mb-1">
+       ✅
+      </div>
+      <div data-template-id="nav-test" class="canva-text font-semibold text-sm"></div>
+     </div>
+    </div>
+    <div class="text-center">
+     <button class="app-btn btn-primary text-lg px-8 py-4" onclick="showSection('vocab')"> <span data-template-id="start-btn" class="canva-text"></span> 🚀 </button>
+    </div>
+   </section><!-- VOCAB SECTION -->
+   <section id="sec-vocab" class="section-hidden">
+    <div class="flex items-center justify-between mb-4">
+     <h2 data-template-id="vocab-title" class="canva-text text-xl font-bold"></h2>
+     <div class="flex gap-2">
+      <button class="app-btn btn-accent text-sm py-2 px-3" onclick="shuffleVocab()">🔀</button> <button class="app-btn text-sm py-2 px-3" style="background:var(--card);border:1px solid var(--border);" onclick="toggleLearnedFilter()">⭐</button>
+     </div>
+    </div><input type="text" id="vocab-search" placeholder="Tìm kiếm từ vựng..." oninput="filterVocab()" class="mb-4">
+    <div class="flex items-center justify-center gap-4 mb-4">
+     <button class="app-btn py-2 px-4" style="background:var(--card);border:1px solid var(--border);" onclick="prevCard()">◀</button> <span id="card-counter" class="font-semibold" style="color:var(--text-muted);">1/17</span> <button class="app-btn py-2 px-4" style="background:var(--card);border:1px solid var(--border);" onclick="nextCard()">▶</button>
+    </div>
+    <div class="flashcard mx-auto" style="max-width:360px;height:420px;" id="flashcard-container" onclick="flipCard()">
+     <div class="flashcard-inner">
+      <div class="flashcard-front app-card flex flex-col items-center justify-center p-6 text-center">
+       <div id="fc-image" class="text-6xl mb-4"></div>
+       <div id="fc-hanzi" class="text-4xl font-bold mb-2"></div>
+       <div id="fc-pinyin" class="text-xl mb-1" style="color:var(--secondary);"></div>
+       <div class="text-sm mt-2" style="color:var(--text-muted);">
+        Nhấn để lật thẻ
+       </div>
+      </div>
+      <div class="flashcard-back app-card flex flex-col items-center justify-center p-6 text-center">
+       <div id="fc-meaning" class="text-2xl font-bold mb-3"></div>
+       <div id="fc-example" class="text-base mb-4" style="color:var(--text-muted);"></div><button class="app-btn btn-primary text-sm py-2 px-4" onclick="event.stopPropagation();speakWord()">🔊 Phát âm</button> <button class="app-btn btn-accent text-sm py-2 px-4 mt-2" onclick="event.stopPropagation();toggleLearned()">⭐ Đánh dấu đã nhớ</button>
+      </div>
+     </div>
+    </div>
+    <div class="app-card p-4 mt-6">
+     <h3 class="font-bold text-lg mb-3">📚 Toàn bộ từ vựng</h3>
+     <div id="vocab-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+    </div>
+   </section><!-- GRAMMAR SECTION -->
+   <section id="sec-grammar" class="section-hidden">
+    <h2 data-template-id="grammar-title" class="canva-text text-xl font-bold mb-4"></h2>
+    <div id="grammar-content"></div>
+   </section><!-- DIALOGUE SECTION -->
+   <section id="sec-dialogue" class="section-hidden">
+    <h2 data-template-id="dialogue-title" class="canva-text text-xl font-bold mb-2"></h2>
+    <p data-template-id="dialogue-subtitle" class="canva-text mb-4" style="color:var(--text-muted);"></p>
+    <div class="flex gap-2 mb-4 flex-wrap">
+     <button class="app-btn btn-primary text-sm py-2 px-3" onclick="playAllDialogue()">▶ Nghe toàn bài</button> <button class="app-btn text-sm py-2 px-3" style="background:var(--card);border:1px solid var(--border);" onclick="setRole('xiaoming')">👦 Tôi là 小明</button> <button class="app-btn text-sm py-2 px-3" style="background:var(--card);border:1px solid var(--border);" onclick="setRole('boss')">👨 Tôi là 老板</button> <button class="app-btn text-sm py-2 px-3" style="background:var(--card);border:1px solid var(--border);" onclick="setRole('all')">👥 Tất cả</button>
+    </div>
+    <div id="dialogue-container" class="space-y-3"></div>
+    <div class="mt-6">
+     <h3 class="font-bold mb-3">📝 Bài tập sau bài khóa</h3>
+     <div id="dialogue-exercises"></div>
+    </div>
+   </section><!-- COMMON PHRASES SECTION -->
+   <section id="sec-phrases" class="section-hidden">
+    <h2 data-template-id="phrases-title" class="canva-text text-xl font-bold mb-2"></h2>
+    <p data-template-id="phrases-subtitle" class="canva-text mb-4" style="color:var(--text-muted);"></p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+     <div class="app-card p-5">
+      <h3 data-template-id="seller-phrases-title" class="canva-text font-bold text-lg mb-3"></h3>
+      <div class="space-y-3">
+       <div data-template-id="seller-greeting" class="canva-text p-3 rounded-lg" style="background:var(--bg);"></div>
+       <div data-template-id="seller-quality" class="canva-text p-3 rounded-lg" style="background:var(--bg);"></div>
+       <div data-template-id="seller-price" class="canva-text p-3 rounded-lg" style="background:var(--bg);"></div>
+      </div>
+     </div>
+     <div class="app-card p-5">
+      <h3 data-template-id="buyer-phrases-title" class="canva-text font-bold text-lg mb-3"></h3>
+      <div class="space-y-3">
+       <div data-template-id="buyer-price" class="canva-text p-3 rounded-lg" style="background:var(--bg);"></div>
+       <div data-template-id="buyer-select" class="canva-text p-3 rounded-lg" style="background:var(--bg);"></div>
+       <div data-template-id="buyer-order" class="canva-text p-3 rounded-lg" style="background:var(--bg);"></div>
+      </div>
+     </div>
+    </div>
+   </section><!-- SPEAKING SECTION -->
+   <section id="sec-speaking" class="section-hidden">
+    <h2 data-template-id="speaking-title" class="canva-text text-xl font-bold mb-4"></h2>
+    <div class="space-y-4">
+     <div class="app-card p-4">
+      <h3 class="font-bold mb-3">🧊 Hoạt động 1: 打开你的冰箱</h3>
+      <div id="speaking-act1" class="space-y-3"></div>
+     </div>
+     <div class="app-card p-4">
+      <h3 class="font-bold mb-3">🛒 Hoạt động 2: Cửa hàng trái cây</h3>
+      <div id="fruit-shop" class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-4"></div>
+      <div id="cart-area" class="app-card p-3 mb-3" style="border:2px solid var(--primary);">
+       <h4 class="font-semibold mb-2">🛒 Giỏ hàng</h4>
+       <div id="cart-items"></div>
+       <div id="cart-total" class="font-bold mt-2"></div>
+      </div>
+      <div id="generated-dialogue" class="app-card p-3 hidden"></div>
+     </div>
+     <div class="app-card p-4">
+      <h3 class="font-bold mb-3">🤔 Hoạt động 3: 猜水果</h3>
+      <div id="guess-fruit"></div>
+     </div>
+    </div>
+   </section><!-- GAMES SECTION -->
+   <section id="sec-games" class="section-hidden">
+    <h2 data-template-id="games-title" class="canva-text text-xl font-bold mb-4"></h2>
+    <div class="flex gap-2 mb-4 flex-wrap">
+     <button class="app-btn btn-accent text-sm py-2 px-3" onclick="showGame('dragdrop')">Drag &amp; Drop</button> <button class="app-btn text-sm py-2 px-3" style="background:#8b5cf6;color:white;" onclick="showGame('speedquiz')">Speed Quiz</button>
+    </div>
+    <div id="game-area"></div>
+   </section><!-- TEST SECTION -->
+   <section id="sec-test" class="section-hidden">
+    <h2 data-template-id="test-title" class="canva-text text-xl font-bold mb-4"></h2>
+    <div id="test-area"></div>
+   </section>
+  </main>
+  <script src="/_sdk/b23f1f6ec78e9bd4.editing_sdk.js" integrity="sha512-WFdQutvUZzxrmcHkL8cbfuFDTeF8Cn8Bt3yqX/a/OdiqPz/t9UcjsIsZK7D+tMTmC2JTwhwRJNyfcHmIWhG8Wg=="></script>
+  <script>
+    // ===== DATA =====
+    const VOCAB = [
+        { hanzi: '苹果', pinyin: 'píngguǒ', meaning: 'Quả táo', emoji: '🍎', example: '我喜欢吃苹果。', color: 'đỏ', taste: 'ngọt', shape: 'tròn', season: 'thu' },
+        { hanzi: '香蕉', pinyin: 'xiāngjiāo', meaning: 'Quả chuối', emoji: '🍌', example: '香蕉很有营养。', color: 'vàng', taste: 'ngọt', shape: 'dài cong', season: 'quanh năm' },
+        { hanzi: '西瓜', pinyin: 'xīguā', meaning: 'Dưa hấu', emoji: '🍉', example: '夏天吃西瓜很凉快。', color: 'xanh/đỏ', taste: 'ngọt mát', shape: 'tròn to', season: 'hè' },
+        { hanzi: '芒果', pinyin: 'mángguǒ', meaning: 'Quả xoài', emoji: '🥭', example: '芒果又甜又香。', color: 'vàng cam', taste: 'ngọt thơm', shape: 'bầu dục', season: 'hè' },
+        { hanzi: '葡萄', pinyin: 'pútao', meaning: 'Quả nho', emoji: '🍇', example: '葡萄可以做葡萄酒。', color: 'tím/xanh', taste: 'ngọt chua', shape: 'tròn nhỏ', season: 'thu' },
+        { hanzi: '草莓', pinyin: 'cǎoméi', meaning: 'Dâu tây', emoji: '🍓', example: '草莓蛋糕很好吃。', color: 'đỏ', taste: 'chua ngọt', shape: 'hình tim', season: 'xuân' },
+        { hanzi: '榴莲', pinyin: 'liúlián', meaning: 'Sầu riêng', emoji: '🌰', example: '榴莲很臭但很好吃。', color: 'vàng', taste: 'ngọt béo', shape: 'tròn gai', season: 'hè' },
+        { hanzi: '橙子', pinyin: 'chéngzi', meaning: 'Quả cam', emoji: '🍊', example: '橙子有很多维生素C。', color: 'cam', taste: 'chua ngọt', shape: 'tròn', season: 'đông' },
+        { hanzi: '火龙果', pinyin: 'huǒlóngguǒ', meaning: 'Thanh long', emoji: '🐉', example: '火龙果的颜色很漂亮。', color: 'hồng/trắng', taste: 'ngọt nhẹ', shape: 'bầu dục', season: 'hè' },
+        { hanzi: '山竹', pinyin: 'shānzhú', meaning: 'Măng cụt', emoji: '🟣', example: '山竹酸酸甜甜的。', color: 'tím đen', taste: 'chua ngọt', shape: 'tròn nhỏ', season: 'hè' },
+        { hanzi: '红毛丹', pinyin: 'hóngmáodān', meaning: 'Chôm chôm', emoji: '🔴', example: '红毛丹很甜。', color: 'đỏ', taste: 'ngọt', shape: 'tròn lông', season: 'hè' },
+        { hanzi: '牛油果', pinyin: 'niúyóuguǒ', meaning: 'Bơ', emoji: '🥑', example: '牛油果对健康很好。', color: 'xanh/vàng', taste: 'béo', shape: 'quả lê', season: 'quanh năm' },
+        { hanzi: '菠萝', pinyin: 'bōluó', meaning: 'Dứa/Thơm', emoji: '🍍', example: '菠萝可以做果汁。', color: 'vàng', taste: 'chua ngọt', shape: 'hình trụ', season: 'hè' },
+        { hanzi: '荔枝', pinyin: 'lìzhī', meaning: 'Vải', emoji: '🔴', example: '荔枝是夏天的水果。', color: 'đỏ', taste: 'ngọt', shape: 'tròn nhỏ', season: 'hè' },
+        { hanzi: '龙眼', pinyin: 'lóngyǎn', meaning: 'Nhãn', emoji: '🟤', example: '龙眼很甜很好吃。', color: 'nâu', taste: 'ngọt', shape: 'tròn nhỏ', season: 'hè thu' },
+        { hanzi: '柚子', pinyin: 'yòuzi', meaning: 'Bưởi', emoji: '🟡', example: '中秋节要吃柚子。', color: 'vàng xanh', taste: 'chua ngọt', shape: 'tròn to', season: 'thu' },
+        { hanzi: '木瓜', pinyin: 'mùguā', meaning: 'Đu đủ', emoji: '🟠', example: '木瓜可以做沙拉。', color: 'cam', taste: 'ngọt', shape: 'bầu dục', season: 'quanh năm' }
+    ];
+
+    const GRAMMAR = [
+        {
+            title: '越来越……',
+            formula: '主语 + 越来越 + 形容词/动词',
+            explain: 'Diễn tả sự thay đổi theo hướng ngày càng tăng. "Ngày càng..."',
+            examples: ['这种水果越来越甜。(Loại trái cây này ngày càng ngọt.)', '夏天的水果越来越贵。(Trái cây mùa hè ngày càng đắt.)'],
+            exercises: [
+                { type: 'fill', q: '西瓜越来越___了。', options: ['甜','吃','是'], answer: '甜' },
+                { type: 'choice', q: '"Trái cây ngày càng đắt" dịch sang tiếng Trung là?', options: ['水果越来越贵','水果很贵','水果不贵'], answer: '水果越来越贵' },
+                { type: 'order', q: 'Sắp xếp: 越来越 / 好吃 / 芒果', answer: '芒果越来越好吃' }
+            ]
+        },
+        {
+            title: '除了……（以外），还……',
+            formula: '除了 A（以外），还 + 动词/形容词 + B',
+            explain: 'Ngoài A ra, còn có B nữa. "Ngoài... ra, còn..."',
+            examples: ['除了苹果以外，我还喜欢吃草莓。(Ngoài táo ra, tôi còn thích ăn dâu.)', '除了西瓜以外，他还买了芒果。(Ngoài dưa hấu, anh ấy còn mua xoài.)'],
+            exercises: [
+                { type: 'fill', q: '除了香蕉___，我还喜欢吃葡萄。', options: ['以外','以后','以前'], answer: '以外' },
+                { type: 'choice', q: 'Câu nào đúng ngữ pháp?', options: ['除了苹果以外，还喜欢草莓。','除了苹果以外，我还喜欢草莓。','除了苹果，我还以外喜欢草莓。'], answer: '除了苹果以外，我还喜欢草莓。' },
+                { type: 'order', q: 'Sắp xếp: 还买了 / 除了火龙果 / 山竹 / 以外', answer: '除了火龙果以外还买了山竹' }
+            ]
+        },
+        {
+            title: '买到 / 买不到',
+            formula: '动词 + 到 / 动词 + 不到',
+            explain: '"到" biểu thị kết quả đạt được. "买到" = mua được, "买不到" = không mua được.',
+            examples: ['今天我在超市买到了新鲜的榴莲。(Hôm nay tôi mua được sầu riêng tươi ở siêu thị.)', '现在这个季节买不到荔枝。(Mùa này không mua được vải.)'],
+            exercises: [
+                { type: 'fill', q: '这个季节买___荔枝。', options: ['不到','到了','得到'], answer: '不到' },
+                { type: 'choice', q: '"Tôi mua được xoài rồi" là?', options: ['我买到芒果了','我买不到芒果','我没买芒果'], answer: '我买到芒果了' },
+                { type: 'fill', q: '他在市场买___了很多水果。', options: ['到','不到','没'], answer: '到' }
+            ]
+        }
+    ];
+
+    const DIALOGUE = [
+        { speaker: 'xiaoming', text: '老板，请问今天的火龙果新鲜吗？怎么卖？', pinyin: 'Lǎobǎn, qǐngwèn jīntiān de huǒlóngguǒ xīnxiān ma? Zěnme mài?', vn: 'Chủ tiệm ơi, hỏi hôm nay thanh long có tươi không? Bán sao?' },
+        { speaker: 'boss', text: '非常新鲜！红心的，特别甜。一斤八块钱。', pinyin: 'Fēicháng xīnxiān! Hóngxīn de, tèbié tián. Yì jīn bā kuài qián.', vn: 'Rất tươi! Ruột đỏ, đặc biệt ngọt. Một cân tám đồng.' },
+        { speaker: 'xiaoming', text: '哇，现在的水果越来越贵了！除了火龙果以外，还有什么甜的水果吗？', pinyin: 'Wa, xiànzài de shuǐguǒ yuèláiyuè guì le! Chúle huǒlóngguǒ yǐwài, hái yǒu shénme tián de shuǐguǒ ma?', vn: 'Oa, trái cây bây giờ ngày càng đắt! Ngoài thanh long ra, còn có loại nào ngọt không?' },
+        { speaker: 'boss', text: '你尝尝这个山竹，酸酸甜甜的，非常好吃。', pinyin: 'Nǐ chángchang zhège shānzhú, suānsuān tiántián de, fēicháng hǎochī.', vn: 'Bạn thử măng cụt này, chua chua ngọt ngọt, rất ngon.' },
+        { speaker: 'xiaoming', text: '挺好的。给我来两斤火龙果，一斤山竹吧。', pinyin: 'Tǐng hǎo de. Gěi wǒ lái liǎng jīn huǒlóngguǒ, yì jīn shānzhú ba.', vn: 'Được đấy. Cho tôi hai cân thanh long, một cân măng cụt.' },
+        { speaker: 'boss', text: '好嘞！一共二十四块钱。', pinyin: 'Hǎo lei! Yígòng èrshísì kuài qián.', vn: 'Được rồi! Tổng cộng hai mươi bốn đồng.' }
+    ];
+
+    // ===== STATE =====
+    let currentCard = 0;
+    let vocabList = [...VOCAB];
+    let learnedWords = JSON.parse(localStorage.getItem('learned') || '[]');
+    let showOnlyLearned = false;
+    let currentRole = 'all';
+    let cart = [];
+    let darkMode = localStorage.getItem('darkMode') === 'true';
+    let progress = JSON.parse(localStorage.getItem('progress') || '{"vocab":false,"grammar":false,"dialogue":false,"speaking":false,"games":false,"test":false}');
+
+    // ===== INIT =====
+    document.addEventListener('DOMContentLoaded', () => {
+        lucide.createIcons();
+        if (darkMode) document.body.classList.add('dark');
+        updateProgress();
+        renderCard();
+        renderVocabList();
+        renderGrammar();
+        renderDialogue();
+        renderSpeaking();
+        initGuessFruit();
+    });
+
+    // ===== DARK MODE =====
+    function toggleDarkMode() {
+        darkMode = !darkMode;
+        document.body.classList.toggle('dark');
+        localStorage.setItem('darkMode', darkMode);
+    }
+
+    // ===== NAVIGATION =====
+    function showSection(id) {
+        document.querySelectorAll('main > section').forEach(s => { s.className = 'section-hidden'; });
+        document.getElementById('sec-' + id).className = 'section-active';
+        document.querySelectorAll('.nav-item').forEach((n, i) => {
+            const sections = ['home','vocab','grammar','dialogue','phrases','speaking','games','test'];
+            n.classList.toggle('active', sections[i] === id);
+        });
+    }
+
+    function updateProgress() {
+        const done = Object.values(progress).filter(Boolean).length;
+        document.getElementById('main-progress').style.width = (done / 6 * 100) + '%';
+        localStorage.setItem('progress', JSON.stringify(progress));
+    }
+
+    // ===== SPEECH =====
+    function speak(text) {
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'zh-CN'; u.rate = 0.8;
+        speechSynthesis.speak(u);
+    }
+    function speakWord() { speak(vocabList[currentCard].hanzi); }
+
+    // ===== AUDIO FEEDBACK =====
+    function playSound(correct) {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.frequency.value = correct ? 600 : 200;
+        osc.type = correct ? 'sine' : 'square';
+        gain.gain.value = 0.3;
+        osc.start(); osc.stop(ctx.currentTime + 0.2);
+    }
+
+    // ===== TOAST =====
+    function showToast(msg, success) {
+        const t = document.createElement('div');
+        t.className = 'toast ' + (success ? 'toast-success' : 'toast-error');
+        t.textContent = msg;
+        document.body.appendChild(t);
+        setTimeout(() => t.remove(), 2000);
+    }
+
+    // ===== CONFETTI =====
+    function launchConfetti() {
+        const colors = ['#22c55e','#f97316','#fbbf24','#ef4444','#8b5cf6'];
+        for (let i = 0; i < 50; i++) {
+            const c = document.createElement('div');
+            c.className = 'confetti';
+            c.style.left = Math.random() * 100 + 'vw';
+            c.style.width = c.style.height = (Math.random() * 10 + 5) + 'px';
+            c.style.background = colors[Math.floor(Math.random() * colors.length)];
+            c.style.animationDelay = Math.random() * 2 + 's';
+            c.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+            document.body.appendChild(c);
+            setTimeout(() => c.remove(), 5000);
+        }
+    }
+
+    // ===== VOCAB / FLASHCARDS =====
+    function renderCard() {
+        if (vocabList.length === 0) return;
+        const v = vocabList[currentCard];
+        document.getElementById('fc-image').textContent = v.emoji;
+        document.getElementById('fc-hanzi').textContent = v.hanzi;
+        document.getElementById('fc-pinyin').textContent = v.pinyin;
+        document.getElementById('fc-meaning').textContent = v.meaning;
+        document.getElementById('fc-example').textContent = v.example;
+        document.getElementById('card-counter').textContent = `${currentCard + 1}/${vocabList.length}`;
+        document.getElementById('flashcard-container').classList.remove('flipped');
+    }
+    function flipCard() { document.getElementById('flashcard-container').classList.toggle('flipped'); }
+    function nextCard() { currentCard = (currentCard + 1) % vocabList.length; renderCard(); }
+    function prevCard() { currentCard = (currentCard - 1 + vocabList.length) % vocabList.length; renderCard(); }
+    function shuffleVocab() { vocabList.sort(() => Math.random() - 0.5); currentCard = 0; renderCard(); }
+    function toggleLearned() {
+        const w = vocabList[currentCard].hanzi;
+        if (learnedWords.includes(w)) learnedWords = learnedWords.filter(x => x !== w);
+        else learnedWords.push(w);
+        localStorage.setItem('learned', JSON.stringify(learnedWords));
+        showToast(learnedWords.includes(w) ? '⭐ Đã đánh dấu!' : 'Đã bỏ đánh dấu', true);
+    }
+    function toggleLearnedFilter() {
+        showOnlyLearned = !showOnlyLearned;
+        vocabList = showOnlyLearned ? VOCAB.filter(v => learnedWords.includes(v.hanzi)) : [...VOCAB];
+        if (vocabList.length === 0) { vocabList = [...VOCAB]; showOnlyLearned = false; showToast('Chưa có từ nào được đánh dấu', false); }
+        currentCard = 0; renderCard();
+    }
+    function filterVocab() {
+        const q = document.getElementById('vocab-search').value.toLowerCase();
+        vocabList = VOCAB.filter(v => v.hanzi.includes(q) || v.pinyin.toLowerCase().includes(q) || v.meaning.toLowerCase().includes(q));
+        if (vocabList.length === 0) vocabList = [...VOCAB];
+        currentCard = 0; renderCard();
+    }
+    function renderVocabList() {
+        const list = document.getElementById('vocab-list');
+        list.innerHTML = VOCAB.map((v, i) => `<div class="p-3 rounded-xl" style="background:var(--bg);border:1px solid var(--border);">
+            <div class="flex items-center gap-3"><span class="text-3xl">${v.emoji}</span><div><div class="font-bold text-lg">${i + 1}. ${v.hanzi}</div><div style="color:var(--secondary);">${v.pinyin}</div><div style="color:var(--text-muted);">${v.meaning}</div></div></div>
+        </div>`).join('');
+    }
+
+    // ===== GRAMMAR =====
+    function renderGrammar() {
+        const container = document.getElementById('grammar-content');
+        container.innerHTML = GRAMMAR.map((g, gi) => `
+            <div class="app-card p-5 mb-4">
+                <h3 class="text-lg font-bold mb-2" style="color:var(--primary);">① ${g.title}</h3>
+                <div class="mb-2 p-3 rounded-lg" style="background:rgba(34,197,94,0.1);"><strong>Công thức:</strong> ${g.formula}</div>
+                <p class="mb-3">${g.explain}</p>
+                <div class="mb-3">${g.examples.map(e => `<p class="mb-1">• ${e}</p>`).join('')}</div>
+                <h4 class="font-semibold mb-2">📝 Bài tập:</h4>
+                <div id="grammar-ex-${gi}">${renderGrammarExercises(g.exercises, gi)}</div>
+            </div>
+        `).join('');
+    }
+    function renderGrammarExercises(exercises, gi) {
+        return exercises.map((ex, ei) => {
+            const id = `gex-${gi}-${ei}`;
+            if (ex.type === 'fill' || ex.type === 'choice') {
+                return `<div class="mb-3 p-3 rounded-lg" style="background:var(--bg);"><p class="mb-2 font-medium">${ex.q}</p>
+                    <div class="flex flex-wrap gap-2">${ex.options.map(o => `<button class="app-btn text-sm py-2 px-3" style="background:var(--card);border:1px solid var(--border);" onclick="checkGrammar(this,'${o}','${ex.answer}','${id}')">${o}</button>`).join('')}</div>
+                    <div id="${id}" class="mt-2 text-sm font-semibold"></div></div>`;
+            }
+            if (ex.type === 'order') {
+                return `<div class="mb-3 p-3 rounded-lg" style="background:var(--bg);"><p class="mb-2 font-medium">${ex.q}</p>
+                    <input type="text" id="${id}-input" placeholder="Nhập câu đã sắp xếp..." class="text-sm">
+                    <button class="app-btn btn-primary text-sm py-2 px-3 mt-2" onclick="checkOrder('${id}','${ex.answer}')">Kiểm tra</button>
+                    <div id="${id}" class="mt-2 text-sm font-semibold"></div></div>`;
+            }
+            return '';
+        }).join('');
+    }
+    function checkGrammar(btn, selected, answer, id) {
+        const correct = selected === answer;
+        playSound(correct);
+        document.getElementById(id).innerHTML = correct ? '<span style="color:#22c55e">✅ Đúng rồi!</span>' : `<span style="color:#ef4444">❌ Sai. Đáp án: ${answer}</span>`;
+        btn.style.background = correct ? '#22c55e' : '#ef4444';
+        btn.style.color = 'white';
+    }
+    function checkOrder(id, answer) {
+        const input = document.getElementById(id + '-input').value.replace(/\s/g, '');
+        const correct = input === answer.replace(/\s/g, '');
+        playSound(correct);
+        document.getElementById(id).innerHTML = correct ? '<span style="color:#22c55e">✅ Đúng!</span>' : `<span style="color:#ef4444">❌ Đáp án: ${answer}</span>`;
+    }
+
+    // ===== DIALOGUE =====
+    function renderDialogue() {
+        const container = document.getElementById('dialogue-container');
+        container.innerHTML = DIALOGUE.map((d, i) => {
+            const isXM = d.speaker === 'xiaoming';
+            const avatar = isXM ? '👦' : '👨';
+            const name = isXM ? '小明' : '老板';
+            const align = isXM ? 'items-start' : 'items-end';
+            const bubble = isXM ? 'chat-left' : 'chat-right';
+            return `<div class="flex flex-col ${align} dialogue-line" data-speaker="${d.speaker}">
+                <div class="flex items-center gap-2 mb-1 ${isXM ? '' : 'flex-row-reverse'}">
+                    <span class="text-xl">${avatar}</span><span class="text-xs font-semibold" style="color:var(--text-muted);">${name}</span>
+                    <button class="text-xs p-1 rounded" style="background:var(--card);border:1px solid var(--border);" onclick="speak('${d.text.replace(/'/g, "\\'")}')">🔊</button>
+                </div>
+                <div class="chat-bubble ${bubble}">
+                    <p class="font-medium text-base">${highlightText(d.text)}</p>
+                    <p class="text-xs mt-1" style="color:var(--secondary);">${d.pinyin}</p>
+                </div>
+            </div>`;
+        }).join('');
+        renderDialogueExercises();
+    }
+    function highlightText(text) {
+        const vocabWords = VOCAB.map(v => v.hanzi);
+        const grammarPatterns = ['越来越', '除了', '以外', '还'];
+        let result = text;
+        grammarPatterns.forEach(p => { result = result.replace(new RegExp(p, 'g'), `<span class="highlight-grammar" onclick="showPopup('grammar','${p}')">${p}</span>`); });
+        vocabWords.forEach(w => { if (text.includes(w)) result = result.replace(new RegExp(w, 'g'), `<span class="highlight-vocab" onclick="showPopup('vocab','${w}')">${w}</span>`); });
+        return result;
+    }
+    function showPopup(type, word) {
+        let content = '';
+        if (type === 'vocab') {
+            const v = VOCAB.find(x => x.hanzi === word);
+            if (v) content = `<h3 class="text-xl font-bold mb-2">${v.emoji} ${v.hanzi}</h3><p><strong>Pinyin:</strong> ${v.pinyin}</p><p><strong>Nghĩa:</strong> ${v.meaning}</p><p><strong>Ví dụ:</strong> ${v.example}</p>`;
+        } else {
+            const g = GRAMMAR.find(x => x.title.includes(word) || word.includes('越来越') && x.title.includes('越来越') || word.includes('除了') && x.title.includes('除了'));
+            if (g) content = `<h3 class="text-xl font-bold mb-2">${g.title}</h3><p><strong>Công thức:</strong> ${g.formula}</p><p class="mt-2">${g.explain}</p>`;
+        }
+        if (!content) return;
+        const overlay = document.createElement('div');
+        overlay.className = 'popup-overlay';
+        overlay.onclick = () => overlay.remove();
+        overlay.innerHTML = `<div class="popup-content" onclick="event.stopPropagation()">${content}<button class="app-btn btn-primary mt-4 w-full" onclick="this.closest('.popup-overlay').remove()">Đóng</button></div>`;
+        document.body.appendChild(overlay);
+    }
+    function setRole(role) {
+        currentRole = role;
+        document.querySelectorAll('.dialogue-line').forEach(el => {
+            if (role === 'all') el.style.display = '';
+            else el.style.display = el.dataset.speaker === role ? '' : 'none';
+        });
+    }
+    function playAllDialogue() { DIALOGUE.forEach((d, i) => setTimeout(() => speak(d.text), i * 4000)); }
+
+    function renderDialogueExercises() {
+        const container = document.getElementById('dialogue-exercises');
+        const questions = [
+            { q: '小明想买什么水果？', pinyin: 'Xiǎomíng xiǎng mǎi shénme shuǐguǒ?', options: ['火龙果和山竹', '苹果和香蕉', '西瓜和芒果'], answer: '火龙果和山竹' },
+            { q: '火龙果一斤多少钱？', pinyin: 'Huǒlóngguǒ yì jīn duōshao qián?', options: ['八块', '十块', '六块'], answer: '八块' },
+            { q: '山竹的味道怎么样？', pinyin: 'Shānzhú de wèidào zěnmeyàng?', options: ['酸酸甜甜的', '很苦', '很辣'], answer: '酸酸甜甜的' },
+            { q: '小明一共花了多少钱？', pinyin: 'Xiǎomíng yígòng huā le duōshao qián?', options: ['二十四块', '二十块', '三十块'], answer: '二十四块' },
+            { q: '小明买了几斤火龙果？', pinyin: 'Xiǎomíng mǎi le jǐ jīn huǒlóngguǒ?', options: ['两斤', '一斤', '三斤'], answer: '两斤' }
+        ];
+        container.innerHTML = '<div class="app-card p-4 mt-4"><h4 class="font-bold mb-3">📖 Đọc hiểu</h4>' +
+            questions.map((q, i) => `<div class="mb-4"><p class="font-medium mb-1">${i + 1}. ${q.q}</p><p class="text-xs mb-2" style="color:var(--secondary);">${q.pinyin}</p>
+            <div class="flex flex-wrap gap-2">${q.options.map(o => `<button class="app-btn text-sm py-2 px-3" style="background:var(--card);border:1px solid var(--border);" onclick="checkGrammar(this,'${o}','${q.answer}','dex-${i}')">${o}</button>`).join('')}</div>
+            <div id="dex-${i}" class="mt-1 text-sm font-semibold"></div></div>`).join('') + '</div>';
+    }
+
+    // ===== SPEAKING =====
+    function renderSpeaking() {
+        const questions = ['这是什么水果？', '它是什么颜色？', '它是什么味道？', '你喜欢吃吗？为什么？'];
+        document.getElementById('speaking-act1').innerHTML = questions.map((q, i) => `
+            <div class="p-3 rounded-lg" style="background:var(--bg);">
+                <p class="font-medium mb-2">${q}</p>
+                <textarea rows="2" placeholder="Nhập câu trả lời bằng tiếng Trung..." class="text-sm"></textarea>
+            </div>`).join('');
+        // Fruit shop
+        const shopFruits = VOCAB.slice(0, 8);
+        document.getElementById('fruit-shop').innerHTML = shopFruits.map((v, i) => `
+            <div class="app-card p-3 text-center cursor-pointer" onclick="addToCart(${i})">
+                <div class="text-3xl mb-1">${v.emoji}</div>
+                <div class="text-sm font-semibold">${v.hanzi}</div>
+                <div class="text-xs" style="color:var(--secondary);">${(i + 5)}元/斤</div>
+            </div>`).join('');
+    }
+    function addToCart(i) {
+        const v = VOCAB[i]; const price = i + 5;
+        cart.push({ name: v.hanzi, emoji: v.emoji, price });
+        renderCart();
+    }
+    function renderCart() {
+        document.getElementById('cart-items').innerHTML = cart.map((c, i) => `<div class="flex justify-between text-sm mb-1"><span>${c.emoji} ${c.name}</span><span>${c.price}元 <button onclick="cart.splice(${i},1);renderCart();" class="text-red-500 ml-1">✕</button></span></div>`).join('');
+        const total = cart.reduce((s, c) => s + c.price, 0);
+        document.getElementById('cart-total').textContent = cart.length ? `总共：${total}元` : '';
+        if (cart.length > 0) generateShopDialogue(total);
+    }
+    function generateShopDialogue(total) {
+        const items = cart.map(c => c.name).join('、');
+        const d = `<h4 class="font-semibold mb-2">💬 Hội thoại mẫu:</h4>
+            <p>👦: 老板，我要买${items}。</p>
+            <p>👨: 好的，一共${total}块钱。</p>
+            <p>👦: 给你${total}块。谢谢！</p>
+            <p>👨: 谢谢光临！</p>`;
+        const el = document.getElementById('generated-dialogue');
+        el.innerHTML = d; el.classList.remove('hidden');
+    }
+
+    // Guess Fruit
+    let guessFruitAnswer = null;
+    function initGuessFruit() {
+        const v = VOCAB[Math.floor(Math.random() * VOCAB.length)];
+        guessFruitAnswer = v;
+        document.getElementById('guess-fruit').innerHTML = `
+            <div class="app-card p-4">
+                <p class="mb-2">🎨 <strong>Màu sắc / 颜色:</strong> ${v.color} / ${v.color === 'vàng' ? '黄色' : '彩色'}</p>
+                <p class="mb-2">📐 <strong>Hình dạng / 形状:</strong> ${v.shape} / ${v.shape === 'hình trụ' ? '圆柱形' : '形状'}</p>
+                <p class="mb-2">👅 <strong>Mùi vị / 味道:</strong> ${v.taste} / ${v.taste === 'chua ngọt' ? '酸甜' : '味道'}</p>
+                <p class="mb-3">🌸 <strong>Mùa / 季节:</strong> ${v.season} / ${v.season === 'hè' ? '夏天' : '季节'}</p>
+                <input type="text" id="guess-input" placeholder="Nhập tên trái cây (tiếng Trung hoặc tiếng Việt)...">
+                <button class="app-btn btn-primary mt-2 w-full" onclick="checkGuess()">Kiểm tra</button>
+                <button class="app-btn btn-accent mt-2 w-full" onclick="initGuessFruit()">🔄 Câu mới</button>
+                <div id="guess-result" class="mt-2 font-semibold"></div>
+            </div>`;
+    }
+    function checkGuess() {
+        const input = document.getElementById('guess-input').value.trim().toLowerCase();
+        const correct = input === guessFruitAnswer.hanzi || input === guessFruitAnswer.meaning.toLowerCase() || input === guessFruitAnswer.pinyin.toLowerCase();
+        playSound(correct);
+        document.getElementById('guess-result').innerHTML = correct
+            ? `<span style="color:#22c55e">🎉 Đúng rồi! ${guessFruitAnswer.emoji} ${guessFruitAnswer.hanzi} (${guessFruitAnswer.meaning})</span>`
+            : `<span style="color:#ef4444">❌ Sai rồi! Đáp án: ${guessFruitAnswer.emoji} ${guessFruitAnswer.hanzi} (${guessFruitAnswer.meaning})</span>`;
+        if (correct) launchConfetti();
+    }
+
+    // ===== GAMES =====
+    function showGame(type) {
+        const area = document.getElementById('game-area');
+        if (type === 'bingo') renderBingo(area);
+        else if (type === 'memory') renderMemory(area);
+        else if (type === 'dragdrop') renderDragDrop(area);
+        else if (type === 'speedquiz') renderSpeedQuiz(area);
+    }
+
+    function renderBingo(area) {
+        const words = [...VOCAB].sort(() => Math.random() - 0.5).slice(0, 9);
+        area.innerHTML = `<div class="app-card p-4"><h3 class="font-bold mb-3">🎯 Bingo</h3>
+            <div class="grid grid-cols-3 gap-2 mb-4" id="bingo-grid">${words.map((w, i) => `<div class="bingo-cell" onclick="this.classList.toggle('selected')">${w.emoji}<br>${w.hanzi}</div>`).join('')}</div>
+            <button class="app-btn btn-primary w-full" onclick="renderBingo(document.getElementById('game-area'))">🔄 Bảng mới</button></div>`;
+    }
+
+    function renderMemory(area) {
+        const pairs = [...VOCAB].sort(() => Math.random() - 0.5).slice(0, 6);
+        const cards = [...pairs.map(p => ({ id: p.hanzi, display: p.emoji, type: 'img' })), ...pairs.map(p => ({ id: p.hanzi, display: p.hanzi, type: 'text' }))].sort(() => Math.random() - 0.5);
+        let flipped = [], matched = [];
+        area.innerHTML = `<div class="app-card p-4"><h3 class="font-bold mb-3">🧠 Memory Game</h3>
+            <div class="grid grid-cols-3 sm:grid-cols-4 gap-2" id="memory-grid">${cards.map((c, i) => `<div class="memory-card hidden-card" data-id="${c.id}" data-idx="${i}" onclick="memoryFlip(this)">?</div>`).join('')}</div></div>`;
+        window._memoryCards = cards; window._memoryFlipped = []; window._memoryMatched = [];
+    }
+    function memoryFlip(el) {
+        if (el.classList.contains('revealed') || el.classList.contains('matched') || window._memoryFlipped.length >= 2) return;
+        const idx = parseInt(el.dataset.idx);
+        const card = window._memoryCards[idx];
+        el.textContent = card.display;
+        el.classList.remove('hidden-card'); el.classList.add('revealed');
+        window._memoryFlipped.push(el);
+        if (window._memoryFlipped.length === 2) {
+            const [a, b] = window._memoryFlipped;
+            if (a.dataset.id === b.dataset.id) {
+                a.classList.add('matched'); b.classList.add('matched');
+                window._memoryMatched.push(a.dataset.id);
+                playSound(true);
+                if (window._memoryMatched.length === 6) { setTimeout(() => { launchConfetti(); showToast('🎉 Hoàn thành!', true); }, 500); }
+            } else {
+                playSound(false);
+                setTimeout(() => { a.textContent = '?'; b.textContent = '?'; a.classList.remove('revealed'); a.classList.add('hidden-card'); b.classList.remove('revealed'); b.classList.add('hidden-card'); }, 800);
+            }
+            window._memoryFlipped = [];
+        }
+    }
+
+    function renderDragDrop(area) {
+        const items = [...VOCAB].sort(() => Math.random() - 0.5).slice(0, 5);
+        const shuffledMeanings = [...items].sort(() => Math.random() - 0.5);
+        area.innerHTML = `<div class="app-card p-4"><h3 class="font-bold mb-3">🔗 Ghép từ</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-2">${items.map(v => `<div class="drag-item text-center" draggable="true" data-meaning="${v.meaning}" ondragstart="dragStart(event)">${v.emoji} ${v.hanzi}</div>`).join('')}</div>
+                <div class="space-y-2">${shuffledMeanings.map(v => `<div class="drag-item text-center text-sm drop-target" draggable="true" data-meaning="${v.meaning}" ondragover="allowDrop(event)" ondrop="dropMeaning(event)">${v.meaning}</div>`).join('')}</div>
+            </div>
+            <p class="text-sm mt-3" style="color:var(--text-muted);">Gợi ý: Kéo từ tiếng Trung vào nghĩa tương ứng để ghép cặp!</p></div>`;
+    }
+    let draggedMeaning = '';
+    function dragStart(event) { draggedMeaning = event.currentTarget.dataset.meaning; event.dataTransfer.setData('text/plain', draggedMeaning); }
+    function allowDrop(event) { event.preventDefault(); event.currentTarget.classList.add('over'); }
+    function dropMeaning(event) { event.preventDefault(); const target = event.currentTarget; target.classList.remove('over'); const value = event.dataTransfer.getData('text/plain') || draggedMeaning; target.style.borderColor = value === target.dataset.meaning ? '#22c55e' : '#ef4444'; target.textContent = value === target.dataset.meaning ? '✅ ' + target.dataset.meaning : '❌ Thử lại'; }
+    function checkDrag(sel, answer) {
+        const result = sel.nextElementSibling;
+        if (sel.value === answer) { result.textContent = '✅'; result.style.color = '#22c55e'; playSound(true); }
+        else if (sel.value) { result.textContent = '❌'; result.style.color = '#ef4444'; playSound(false); }
+    }
+
+    // Speed Quiz
+    function renderSpeedQuiz(area) {
+        const questions = [...VOCAB].sort(() => Math.random() - 0.5).slice(0, 10).map(v => {
+            const opts = [v.meaning, ...VOCAB.filter(x => x !== v).sort(() => Math.random() - 0.5).slice(0, 3).map(x => x.meaning)].sort(() => Math.random() - 0.5);
+            return { q: `${v.emoji} ${v.hanzi} (${v.pinyin})`, answer: v.meaning, options: opts };
+        });
+        let current = 0, score = 0, timeLeft = 60;
+        area.innerHTML = `<div class="app-card p-4"><h3 class="font-bold mb-3">⚡ Speed Quiz</h3>
+            <div class="flex justify-between mb-3"><span id="sq-score">Điểm: 0/10</span><span id="sq-time" style="color:var(--secondary);font-weight:bold;">⏱ 60s</span></div>
+            <div id="sq-question"></div></div>`;
+        const timer = setInterval(() => {
+            timeLeft--;
+            document.getElementById('sq-time').textContent = `⏱ ${timeLeft}s`;
+            if (timeLeft <= 0) { clearInterval(timer); endSpeedQuiz(score, questions.length); }
+        }, 1000);
+        window._sqTimer = timer;
+        function showQ() {
+            if (current >= questions.length) { clearInterval(timer); endSpeedQuiz(score, questions.length); return; }
+            const q = questions[current];
+            document.getElementById('sq-question').innerHTML = `<p class="text-xl font-bold text-center mb-4">${q.q}</p>
+                <div class="grid grid-cols-2 gap-2">${q.options.map(o => `<button class="app-btn text-sm py-3" style="background:var(--card);border:2px solid var(--border);" onclick="sqAnswer(this,'${o.replace(/'/g, "\\'")}','${q.answer.replace(/'/g, "\\'")}')">${o}</button>`).join('')}</div>`;
+        }
+        window.sqAnswer = (btn, sel, ans) => {
+            if (sel === ans) { score++; playSound(true); }
+            else playSound(false);
+            btn.style.background = sel === ans ? '#22c55e' : '#ef4444';
+            btn.style.color = 'white';
+            document.getElementById('sq-score').textContent = `Điểm: ${score}/${questions.length}`;
+            current++;
+            setTimeout(showQ, 500);
+        };
+        showQ();
+    }
+    function endSpeedQuiz(score, total) {
+        if (window._sqTimer) clearInterval(window._sqTimer);
+        document.getElementById('sq-question').innerHTML = `<div class="text-center"><p class="text-3xl font-bold mb-2">${score}/${total}</p><p class="text-lg">${score >= 8 ? '🎉 Xuất sắc!' : score >= 5 ? '👍 Khá tốt!' : '💪 Cố gắng hơn!'}</p>
+            <button class="app-btn btn-primary mt-4" onclick="renderSpeedQuiz(document.getElementById('game-area'))">🔄 Chơi lại</button></div>`;
+        if (score >= 8) launchConfetti();
+    }
+
+    // ===== FINAL TEST =====
+    function renderTest() {
+        const area = document.getElementById('test-area');
+        const allQ = [];
+        // Multiple choice
+        VOCAB.slice(0, 5).forEach(v => {
+            const opts = [v.meaning, ...VOCAB.filter(x => x !== v).sort(() => Math.random() - 0.5).slice(0, 3).map(x => x.meaning)].sort(() => Math.random() - 0.5);
+            allQ.push({ type: 'mc', q: `"${v.hanzi}" có nghĩa là gì?`, options: opts, answer: v.meaning });
+        });
+        // Fill in
+        GRAMMAR.forEach(g => {
+            const ex = g.exercises[0];
+            allQ.push({ type: 'mc', q: ex.q, options: ex.options, answer: ex.answer });
+        });
+        // Order
+        allQ.push({ type: 'mc', q: '小明在哪里买水果？', options: ['水果店', '超市', '网上', '学校'], answer: '水果店' });
+        allQ.push({ type: 'mc', q: '山竹的味道是什么？', options: ['酸酸甜甜的', '很苦', '很辣', '很咸'], answer: '酸酸甜甜的' });
+
+        const shuffled = allQ.sort(() => Math.random() - 0.5).slice(0, 10);
+        let answered = 0, correct = 0;
+        const startTime = Date.now();
+
+        area.innerHTML = `<div class="app-card p-4"><h3 class="font-bold mb-3">📋 Kiểm tra cuối bài (10 câu)</h3>
+            <div id="test-questions">${shuffled.map((q, i) => `
+                <div class="mb-4 p-3 rounded-lg" style="background:var(--bg);">
+                    <p class="font-medium mb-2">${i + 1}. ${q.q}</p>
+                    <div class="flex flex-wrap gap-2">${q.options.map(o => `<button class="app-btn text-sm py-2 px-3" style="background:var(--card);border:1px solid var(--border);" onclick="testAnswer(this,'${o.replace(/'/g, "\\'")}','${q.answer.replace(/'/g, "\\'")}',${i})">${o}</button>`).join('')}</div>
+                    <div id="test-r-${i}" class="mt-1 text-sm font-semibold"></div>
+                </div>`).join('')}</div>
+            <div id="test-result" class="hidden mt-4 text-center app-card p-6"></div></div>`;
+
+        window.testAnswer = (btn, sel, ans, idx) => {
+            if (document.getElementById(`test-r-${idx}`).textContent) return;
+            const isCorrect = sel === ans;
+            if (isCorrect) correct++;
+            answered++;
+            playSound(isCorrect);
+            document.getElementById(`test-r-${idx}`).innerHTML = isCorrect ? '<span style="color:#22c55e">✅ Đúng!</span>' : `<span style="color:#ef4444">❌ Đáp án: ${ans}</span>`;
+            btn.style.background = isCorrect ? '#22c55e' : '#ef4444'; btn.style.color = 'white';
+            if (answered === shuffled.length) {
+                const time = Math.round((Date.now() - startTime) / 1000);
+                const pct = Math.round(correct / shuffled.length * 100);
+                const grade = pct >= 90 ? 'A - Xuất sắc' : pct >= 70 ? 'B - Khá' : pct >= 50 ? 'C - Trung bình' : 'D - Cần cố gắng';
+                const el = document.getElementById('test-result');
+                el.classList.remove('hidden');
+                el.innerHTML = `<h3 class="text-2xl font-bold mb-2">🏆 Kết quả</h3>
+                    <p class="text-4xl font-bold" style="color:var(--primary);">${correct}/${shuffled.length}</p>
+                    <p class="mt-2">Tỷ lệ đúng: ${pct}%</p>
+                    <p>Thời gian: ${time}s</p>
+                    <p class="text-lg font-bold mt-2" style="color:var(--secondary);">${grade}</p>
+                    <button class="app-btn btn-primary mt-4" onclick="renderTest()">🔄 Làm lại</button>`;
+                if (pct >= 70) launchConfetti();
+                progress.test = true; updateProgress();
+            }
+        };
+    }
+
+    // Init test on section show
+    const origShow = showSection;
+    showSection = function(id) {
+        origShow(id);
+        if (id === 'test') renderTest();
+        if (id === 'vocab') { progress.vocab = true; updateProgress(); }
+        if (id === 'grammar') { progress.grammar = true; updateProgress(); }
+        if (id === 'dialogue') { progress.dialogue = true; updateProgress(); }
+        if (id === 'phrases') { progress.dialogue = true; updateProgress(); }
+        if (id === 'speaking') { progress.speaking = true; updateProgress(); }
+        if (id === 'games') { progress.games = true; updateProgress(); }
+    };
+    </script>
+ </body>
+</html>
